@@ -29,7 +29,7 @@ function IntPage() {
 function ShowOrder(ProductName, OrderNumber, Price) {
     $("#ProductName").text("商品名称:" + ProductName);
     $("#OrderNumber").text("订单号:" + OrderNumber);
-    Price = (Price / 200).toFixed(2);
+    Price = (Price / 100).toFixed(2);
     $("#Price").text(Price);
 }
 //选择
