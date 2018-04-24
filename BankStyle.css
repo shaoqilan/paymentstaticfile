@@ -1,186 +1,228 @@
- * {
-            margin: 0;
-            padding: 0;
-        }
+* {
+    margin: 0;
+    padding: 0;
+}
 
-        body {
-            font-family: Microsoft YaHei;
-            background: #e0e2e4;
-        }
+body {
+    font-family: Microsoft YaHei;
+    background: #e0e2e4;
+}
 
-        .box {
-            background: #fff;
-            width: 980px;
-            margin: 0 auto;
-        }
+.box {
+    background: #fff;
+    width: 980px;
+    margin: 0 auto;
+}
 
-        .head {
-            height: 46px;
-            margin-top: 20px;
-            padding: 30px;
-            position: relative;
-            border-bottom: 1px #9ca6ac dashed;
-        }
+.head {
+    height: 46px;
+    margin-top: 20px;
+    padding: 30px;
+    position: relative;
+    border-bottom: 1px #9ca6ac dashed;
+}
 
-            .head h4 {
-                color: #0067a7;
-                height: 30px;
-            }
+    .head h4 {
+        color: #0067a7;
+        height: 30px;
+    }
 
-            .head p {
-                color: #475055;
-                font-size: 13px;
-            }
+    .head p {
+        color: #475055;
+        font-size: 13px;
+    }
 
-        .money {
-            display: block;
-            position: absolute;
-            right: 30px;
-            padding-right: 35px;
-            bottom: 27px;
-        }
+.money {
+    display: block;
+    position: absolute;
+    right: 30px;
+    padding-right: 35px;
+    bottom: 27px;
+}
 
-        .m1 {
-            float: left;
-            color: #ff8255 !important;
-            font-size: 18px !important;
-            font-weight: bold;
-            margin-right: 5px;
-        }
+.m1 {
+    float: left;
+    color: #ff8255 !important;
+    font-size: 18px !important;
+    font-weight: bold;
+    margin-right: 5px;
+}
 
-        .m2 {
-            float: left;
-            margin-top: 4px;
-        }
+.m2 {
+    float: left;
+    margin-top: 4px;
+}
 
-        .head span p {
-        }
+.head span p {
+}
 
-        .main {
-            border-top: 10px #e0e2e4 solid;
-            padding: 60px;
-        }
+.main {
+    border-top: 10px #e0e2e4 solid;
+    padding: 60px;
+}
 
-        .titlebox {
-            border-bottom: 1px #e7e7e7 solid;
-        }
+.titlebox {
+    border-bottom: 1px #e7e7e7 solid;
+}
 
-            .titlebox span {
-                color: #00bbee;
-                font-weight: bold;
-                display: block;
-                position: relative;
-                height: 35px;
-                line-height: 35px;
-                text-align: center;
-                width: 125px;
-                font-size: 15px;
-                z-index: 999;
-                border: 1px #e7e7e7 solid;
-                border-bottom: 1px #fff solid;
-                top: 1px;
-                border-radius: 5px 5px 0px 0px;
-            }
+    .titlebox span {
+        color: #00bbee;
+        font-weight: bold;
+        display: block;
+        position: relative;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        width: 125px;
+        font-size: 15px;
+        z-index: 999;
+        border: 1px #e7e7e7 solid;
+        border-bottom: 1px #fff solid;
+        top: 1px;
+        border-radius: 5px 5px 0px 0px;
+    }
 
-        .bank {
-        }
+.bank {
+}
 
-            .bank ul {
-            }
+    .bank ul {
+    }
 
-            .bank li {
-                list-style: none;
-                border: #e7e7e7 solid 1px;
-                float: left;
-                height: 35px;
-                width: 150px;
-                margin-top: 20px;
-                margin-right: 20px;
-                text-align: center;
-            }
+    .bank li {
+        list-style: none;
+        border: #e7e7e7 solid 1px;
+        float: left;
+        height: 35px;
+        width: 150px;
+        margin-top: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
 
-        .click div {
-            width: 150px;
-            height: 35px;
-            background-repeat: no-repeat;
-			
-        }
+.click div {
+    width: 150px;
+    height: 35px;
+    background-repeat: no-repeat;
+}
 
-        .bank img {
-            height: 100%;
-        }
+.bank img {
+    height: 100%;
+}
 
-        .bank input {
-            margin-top: 30px;
-            background: #ffa500;
-            border: none;
-            border-radius: 5px;
-            height: 35px;
-            width: 200px;
-            color: #fff;
-        }
+.bank input {
+    margin-top: 30px;
+    background: #ffa500;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 200px;
+    color: #fff;
+}
 
-        .clear {
-            clear: both;
-            border: 0px;
-            padding: 0px;
-            margin: 0px;
-        }
+.clear {
+    clear: both;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
 
-        .img1 {    
-			background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-				background-position-x: -317px;
-				background-position-y: -54px;}
-        .img2 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			    background-position-x: 0;
-				background-position-y: 2px;}
-        .img3 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			    background-position-x: -157px;
-				background-position-y: -55px;}
-        .img4 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			background-position-x: right;
-			background-position-y: -54px;}
-        .img5 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			background-position-x: -317px;
-			background-position-y: 0;}
-        .img6 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			background-position-x: 0;
-			background-position-y: -28px;}
-        .img7 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			    background-position-x: -475px;
-    background-position-y: -115px;}
-        .img8 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			    background-position-x: -1px;
-    background-position-y: -110px;}
-        .img9 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			    background-position-x: -457px;
-    background-position-y: -85px;}
-        .img10 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			    background-position-x: -471px;
-    background-position-y: -53px;}
-        .img11 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			background-position-x: -157px;
-    background-position-y: -113px;}
-        .img12 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			background-position-x: -317px;
-			background-position-y: -116px;}
-        .img13 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			    background-position-x: 0;
-    background-position-y: -62px;}
-        .img14 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			    background-position-x: -470px;
-    background-position-y: 3px;}
-        .img15 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			    background-position-x: -619px;
-    background-position-y: 2px;}
-        .img16 {background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			background-position-x: -317px;
-			background-position-y: -54px;}
-        .selectoff {
-            position: absolute;
-        }
-        .selectlock {
-            position: absolute;
-			background: url(http://pay.tepos.cn/Resources/bank/bank.png);
-			background-position: right bottom;
-        }
+.ABC {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/ABC.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.BOC {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/BOC.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.CCB {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/CCB.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.CEB {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/CEB.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.CIB {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/CIB.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.CITIC {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/CITIC.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.CMB {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/CMB.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.CMBC {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/CMBC.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.COMM {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/COMM.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.GDB {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/GDB.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.HKBEA {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/HKBEA.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.HXBANK {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/HXBANK.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.ICBC {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/ICBC.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.PSBC {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/PSBC.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.SPDB {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/SPDB.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.selectoff {
+    position: absolute;
+}
+
+.selectlock {
+    position: absolute;
+    background: url(http://pay.tepos.cn/Resources/bank/bank.png);
+    background-position: right bottom;
+}

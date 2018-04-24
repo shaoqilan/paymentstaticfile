@@ -7,7 +7,7 @@ $(function () {
         if (BankList[i].BankCardTypeValue == "1") {
             var html = "";
             for (var k = 0; k < BankList[i].BankList.length; k++) {
-                html += " <li><a class=\"click\" onclick=\"SelectBank(this, '" + BankList[i].BankList[k].BankCode + "')\" title=\"" + BankList[i].BankList[k].BankName + "\"><div class=\"selectoff\"></div><div style=\"background:url(http://pay.tepos.cn/Resources/bank/BankImage/" + BankList[i].BankList[k].OfficialBankCode + ".jpg);    background-size: 100% 100%;background-repeat: no-repeat;\" class=\"img2\"></div></a></li>";
+                html += " <li><a class=\"click\" onclick=\"SelectBank(this, '" + BankList[i].BankList[k].BankCode + "')\" title=\"" + BankList[i].BankList[k].BankName + "\"><div class=\"selectoff\"></div><div class=\"" + BankList[i].BankList[k].OfficialBankCode + "\"></div></a></li>";
             }
             html += "<div class=\"clear\"></div>";
             $("#selectbank").html(html);
