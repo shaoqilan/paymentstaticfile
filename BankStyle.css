@@ -223,6 +223,6 @@ body {
 
 .selectlock {
     position: absolute;
-    background: url(http://pay.tepos.cn/Resources/bank/bank.png);
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/Image/select.png);
     background-position: right bottom;
 }
