@@ -59,8 +59,48 @@ var BankCode = "";
 function Request(BankCardType) {
     var Bank = GetForm(BankCardType, BankCode);
     var Form = $(Bank.Payment);
-    var ContDiv = $("<div></div>");
-    ContDiv.append(Form);
-    $(document.body).append(ContDiv);
-    Form.submit();
+    //获取form类型
+    if (Form.attr("ChannelType") == "Sand") {
+        //是杉德
+        var ApiUrl = Form.attr("action");
+        var Parameter = [];
+        for (var i = 0; i < Form.find("input").length; i++) {
+            Parameter.push($(Form.find("input")[i]).attr("name") + "=" + $(Form.find("input")[i]).val());
+        }
+        $.ajax({
+            type: "post",
+            url: "http://a.tepos.cn/Payment/AgencyHttp",
+            data:JSON.stringify({ HttpUrl: ApiUrl,Method:"POST", ContentType: 0, Parameter: Parameter.join("&") }),
+            dataType: "text",
+            success: function (ret) {
+                var retBody = decodeURIComponent(ret);
+                var Data = JSON.parse(GetQueryString(retBody, "data"));
+                if (Data.head.respCode == "000000") {
+                    var Credential = JSON.parse(Data.body.credential);
+                    var TemForm = "<form action=\"" + Credential.submitUrl + "\" method=\"post\" accept-charset=\"utf-8\" enctype=\"application/x-www-form-urlencoded\">";
+                    for (var pitem in Credential.params) {
+                        TemForm += "<input name='" + pitem + "' value='" + Credential.params[pitem] + "' />";
+                    }
+                    TemForm += "</form>";
+                    var FormObj = $(TemForm);
+                    var ContDiv = $("<div></div>");
+                    ContDiv.append(FormObj);
+                    $(document.body).append(ContDiv);
+                    FormObj.submit();
+                } else {
+                    alert("[" + Data.head.respCode + "]" + Data.head.respMsg);
+                }
+            }
+        });
+    } else {
+        var ContDiv = $("<div></div>");
+        ContDiv.append(Form);
+        $(document.body).append(ContDiv);
+        Form.submit();
+    }
+}
+function GetQueryString(QueryString, name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = QueryString.match(reg);
+    if (r != null) return unescape(r[2]); return null;
 }
