@@ -59,11 +59,6 @@ var BankCode = "";
 function Request(BankCardType) {
     var Bank = GetForm(BankCardType, BankCode);
     var Form = $(Bank.Payment);
-    var DIVIframe = $("<div style='position:fixed; top:0px; bottom:0px; left:0px; right:0px;width:100 %; height:100 %;'></div>");
-    var iframe = $("<iframe name='ShowBody' style=\"width:100 %; height:100 %;  \" frameborder=\"0\"></iframe>");
-    DIVIframe.append(iframe);
-    //新增跳转到iframe
-    Form.attr("target", "ShowBody");
     //获取form类型
     if (Form.attr("ChannelType") == "Sand") {
         //是杉德
@@ -89,9 +84,7 @@ function Request(BankCardType) {
                     TemForm += "</form>";
                     var FormObj = $(TemForm);
                     var ContDiv = $("<div></div>");
-                    FormObj.attr("target", "ShowBody");
                     ContDiv.append(FormObj);
-                    $(document.body).append(DIVIframe);
                     $(document.body).append(ContDiv);
                     FormObj.submit();
                 } else {
@@ -102,7 +95,6 @@ function Request(BankCardType) {
     } else {
         var ContDiv = $("<div></div>");
         ContDiv.append(Form);
-        $(document.body).append(DIVIframe);
         $(document.body).append(ContDiv);
         Form.submit();
     }
