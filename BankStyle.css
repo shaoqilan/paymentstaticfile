@@ -192,8 +192,8 @@ body {
     background-repeat: no-repeat;
 }
 
-.HXBANK {
-    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/HXBANK.jpg);
+.HXB {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/HXB.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -215,8 +215,36 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-
-
+.BCM {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/BCM.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.PAB {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/PAB.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.BOB {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/BOB.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.CGB {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/CGB.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.BOS {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/BOS.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.EGB {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/EGB.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 .selectoff {
     position: absolute;
 }
