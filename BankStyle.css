@@ -245,6 +245,11 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+.NBCB {
+    background: url(https://raw.githubusercontent.com/shaoqilan/paymentstaticfile/master/BankImage/NBCB.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 .selectoff {
     position: absolute;
 }
