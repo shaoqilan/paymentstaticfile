@@ -77,7 +77,7 @@ function Request(BankCardType) {
                 var Data = JSON.parse(GetQueryString(retBody, "data"));
                 if (Data.head.respCode == "000000") {
                     var Credential = JSON.parse(Data.body.credential);
-                    var TemForm = "<form action=\"" + Credential.submitUrl + "\" method=\"post\" accept-charset=\"utf-8\" enctype=\"application/x-www-form-urlencoded\">";
+                    var TemForm = "<form style=\"display:none;\" action=\"" + Credential.submitUrl + "\" method=\"post\" accept-charset=\"utf-8\" enctype=\"application/x-www-form-urlencoded\">";
                     for (var pitem in Credential.params) {
                         TemForm += "<input name='" + pitem + "' value='" + Credential.params[pitem] + "' />";
                     }
