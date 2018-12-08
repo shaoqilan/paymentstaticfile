@@ -1,2 +1,12 @@
-﻿<form id='formid' style="display:none;" action="https://cashier.sandpay.com.cn/allChannelPayAdapter" method="post" accept-charset="utf-8" enctype="application/x-www-form-urlencoded"><input name='bizType' value='000201' /><input name='realSumbitUrl' value='https://gateway.95516.com/gateway/api/frontTransReq.do' /><input name='txnSubType' value='01' /><input name='backUrl' value='http://payment.sandpay.com.cn/request/fjUnionpayInternetBankNotify' /><input name='signature' value='ImxKaSDRzKGCegAV9mzVw2aiBvSGAe+l0l0B8+z9KsHRwpJD8OEh8Cfl/BqnefJKCZM1L1Gor6Swj9b0soAzsBzH116tUzdk0yseYz/SWVFhQJd7Hx3T/gB7c6Js9GXnSacuIX48tH5XVhzi3CYRYNk8N7iZWnDvtk8h+KpWEXGBb4OpPwYMI823jYuqp2fM3FTQvIqqtwO7EAT2KvUpZFA7q5NLAzElSa6P7My2bYzeuqL2nCK5/6ejo08InejPMC7fjVd8Jgsxv4MNtvFtdFIZiHyu8SIOxOwdhxyMEqWhLSvCGjiLYvniYwq7N30THtvJrAdXX2r3FWFnmO+FOw==' /><input name='orderId' value='WG20180517071055100000000048381' /><input name='issInsCode' value='ICBC' /><input name='merName' value='寰媿鏂囧寲' /><input name='txnType' value='01' /><input name='frontUrl' value='https://cashier.sandpay.com.cn/gateway/api/order/notice/allChannelPay' /><input name='channelType' value='07' /><input name='certId' value='74969073717' /><input name='acqInsCode' value='48272900' /><input name='encoding' value='UTF-8' /><input name='version' value='5.0.0' /><input name='merAbbr' value='寰媿鏂囧寲' /><input name='accessType' value='0' /><input name='txnTime' value='20180517163612' /><input name='merId' value='827391053980001' /><input name='merCatCode' value='5398' /><input name='currencyCode' value='156' /><input name='txnAmt' value='1' /><input name='signMethod' value='01' /></form>
-<script>document.getElementById('formid').submit();</script>
+﻿<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js">
+</script>
+<link href="BankStyle.css" rel="stylesheet" />
+<script src="PublicTemplate.js"></script>
+<form id="Form_BOC" onsubmit="return CSPAYRequest(this)" style="display:none;" action="http://103.243.182.195/cspay/api/v1/transRequest" method="post" enctype="application/x-www-form-urlencoded"><input name="mch_id" value="840000000468" /><input name="total_fee" value="100" /><input name="service" value="TS_WAP" /><input name="out_trade_no" value="20181208095349" /><input name="sign_type" value="MD5" /><input name="notify_url" value="http://a.tepos.cn/Payment/NoticeCallBack/FY.Payment/FY.Payment" /><input name="body" value="测试订单" /><input name="return_url" value="http://www.xiaoshucp.com/" /><input name="cardNo" value="6217003320019802001" /><input name="bankno" value="BOC" /><input name="sign" value="7555C8096A1BBE56719A2D3F72ABC64E" /></form>
+
+<script type="text/javascript">
+    var BankList = [];
+    $(function () {
+        $("#Form_BOC").submit();
+    });
+</script>

@@ -104,3 +104,32 @@ function GetQueryString(QueryString, name) {
     var r = QueryString.match(reg);
     if (r != null) return unescape(r[2]); return null;
 }
+
+//特殊渠道需要提交表单的
+//***CSPAY
+function CSPAYRequest(obj) {
+    var Form= $(obj);
+    var ApiUrl = Form.attr("action");
+    var Parameter = [];
+    for (var i = 0; i < Form.find("input").length; i++) {
+        Parameter.push($(Form.find("input")[i]).attr("name") + "=" + $(Form.find("input")[i]).val());
+    }
+    $.ajax({
+        type: "post",
+        url: "http://a.tepos.cn/Payment/AgencyHttp",
+        data: JSON.stringify({ HttpUrl: ApiUrl, Method: "POST", ContentType: 0, Parameter: Parameter.join("&") }),
+        dataType: "text",
+        success: function (ret) {
+            ret=JSON.parse(ret);
+            if (ret.ret_code == "SUCCESS") {
+                var payinfo = $(ret.payinfo);
+                var subform=(payinfo.find("form"));
+                $(document.body).append(payinfo);
+                subform.submit();
+            } else {
+                alert("支付失败：" + ret.ret_message);
+            }
+        }
+    });
+    return false;
+}
